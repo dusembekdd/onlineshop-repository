@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9e2b741-dba0-4d86-b8ad-201e7b60b336" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runtime.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/restapi/Procfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/restapi/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/restapi/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,6 +23,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/content" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/content" />
       <recent name="$PROJECT_DIR$/accounts" />

@@ -27,7 +27,7 @@ SECRET_KEY = '1i8^*ea1h3g9*z9v62y@2zwfw*l%-ts_4orrwna0rr_3bv+=&1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = bool(os.environ.get("DEBUG", False))
 
-ALLOWED_HOSTS = ['https://ddrestapi.herokuapp.com/','www.ddrestapi.com']
+ALLOWED_HOSTS = ['https://ddrestapi.herokuapp.com/','www.ddrestapi.com', 'ddrestapi.com']
 
 
 # Application definition
