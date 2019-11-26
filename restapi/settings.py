@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'restapi.wsgi.application'
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config()
+    'default': dj_database_url.config(default='postgres://user:pass@localhost/dataBaseOfOnlineShop')
     }
 
 # Password validation
