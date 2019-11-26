@@ -25,8 +25,8 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '1i8^*ea1h3g9*z9v62y@2zwfw*l%-ts_4orrwna0rr_3bv+=&1'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = bool(os.environ.get("DEBUG", False))
-
+# DEBUG = bool(os.environ.get("DEBUG", False))
+DEBUG=False
 ALLOWED_HOSTS = ['https://ddrestapi.herokuapp.com/','www.ddrestapi.com', 'ddrestapi.com']
 
 
@@ -80,10 +80,15 @@ WSGI_APPLICATION = 'restapi.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-
 DATABASES = {
-    'default': dj_database_url.config(default='postgres://user:postgres@localhost/dataBaseOfOnlineShop')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dataBaseOfOnlineShop',
+        'USER': 'postgres',
+        'PASSWORD': 'dias1234',
+        'HOST': 'localhost'
     }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
