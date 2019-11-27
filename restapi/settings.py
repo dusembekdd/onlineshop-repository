@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import django_heroku
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -23,8 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get('1i8^*ea1h3g9*z9v62y@2zwfw*l%-ts_4orrwna0rr_3bv+=&1')
-EMAIL_HOST_USER = os.environ.get('')
-EMAIL_HOST_PASSWORD = os.environ.get('')
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -143,7 +140,6 @@ LOGGING = {
 }
 
 # Activate Django-Heroku settings except logging
-django_heroku.settings(locals(), logging=False)
 STATIC_URL = '/static/'
 #location where django collect all static files
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
